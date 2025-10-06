@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username   = "root";
-$password   = "root123";  
-$dbname     = "dbwebsec_db";
+$password   = "";  
+$dbname     = "your-db-name";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
