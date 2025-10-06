@@ -2,7 +2,7 @@
 session_start();
 include 'db_connect.php';
 
-define('RECAPTCHA_SECRET_KEY', '6LdLptkrAAAAAOS5oh9eZHn-9YdatWXyVXfjMQYX');
+define('RECAPTCHA_SECRET_KEY', 'your-secret-key');
 
 if (isset($_GET['logout'])) {
     session_unset();
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <form method="post">
     Username: <input type="text" name="username">
     Password: <input type="password" name="password">
-    <div class="g-recaptcha" data-sitekey="6LdLptkrAAAAAAZW7YyReWSWLqfitav4CTxEkYC-"></div>
+    <div class="g-recaptcha" data-sitekey="your-site-key"></div>
     <br>
     <button type="submit">Login</button>
 </form>
