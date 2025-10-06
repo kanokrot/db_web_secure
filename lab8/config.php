@@ -1,8 +1,8 @@
 <?php
 $DB_HOST = 'localhost';
 $DB_USER = 'root';
-$DB_PASS = 'root123';
-$DB_NAME = 'dbwebsec_db';
+$DB_PASS = '';
+$DB_NAME = 'your-db-name';
 
 ini_set('session.use_only_cookies', 1);
 ini_set('session.cookie_httponly', 1);
