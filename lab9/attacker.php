@@ -1,5 +1,5 @@
 <?php
-session_id("uu1mrold31i1phpovt8ig78m7c"); // Change Session id value
+session_id("your-user-id"); // Change Session id value
 session_start();
 ?>
 
